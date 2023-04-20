@@ -11,6 +11,8 @@ func rootRout(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
+	fmt.Println("Hello world")
+
 	http.HandleFunc("/", rootRout)
 	http.ListenAndServe(":80", nil)
 
